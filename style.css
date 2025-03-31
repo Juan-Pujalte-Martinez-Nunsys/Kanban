@@ -13,6 +13,10 @@ main {
 h1 {
     margin: auto;
     width: fit-content;
+
+    padding: 10px 20px;
+    background-color: rgba(17, 117, 162, 0.5);
+    border-radius: 10px;
 }
 
 #kanban {
@@ -24,6 +28,10 @@ h1 {
     width: 20%;
     float: left;
     text-align: center;
+
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
 }
 
 .tags > .tag {
@@ -43,4 +51,10 @@ h1 {
 }
 .tags > .tag.device {
     background-color: gold;
+}
+
+.card {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
 }
