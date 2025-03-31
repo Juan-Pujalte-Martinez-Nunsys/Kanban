@@ -14,3 +14,14 @@ h1 {
     margin: auto;
     width: fit-content;
 }
+
+#kanban {
+    overflow: hidden;
+}
+
+.column {
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
