@@ -25,3 +25,22 @@ h1 {
     float: left;
     text-align: center;
 }
+
+.tags > .tag {
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: white;
+}
+
+.tags > .tag.front {
+    background-color: limegreen;
+}
+.tags > .tag.back {
+    background-color: tomato;
+}
+.tags > .tag.device {
+    background-color: gold;
+}
