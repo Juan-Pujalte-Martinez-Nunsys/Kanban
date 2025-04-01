@@ -58,6 +58,8 @@ h1 {
     padding: 10px 20px;
     background-color: white;
     border-radius: 10px;
+
+    margin: 15px;
 }
 
 .card::before {
