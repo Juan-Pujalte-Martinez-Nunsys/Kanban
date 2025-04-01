@@ -41,6 +41,8 @@ h1 {
     height: 20px;
     display: inline-block;
     color: white;
+    text-align: center;
+    align-content: center;
 }
 
 .tags > .tag.front {
