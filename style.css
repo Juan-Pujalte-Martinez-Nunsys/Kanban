@@ -31,7 +31,7 @@ h1 {
     overflow: hidden;
 }
 
-.column {
+#kanban .column {
     box-sizing: border-box;
     width: calc(20% - 20px);
     margin: 10px;
@@ -42,7 +42,7 @@ h1 {
     border-radius: 10px;
 }
 
-.tags > .tag {
+#kanban .column .card .tags > .tag {
     padding: 10px;
     border-radius: 50%;
     width: 20px;
@@ -53,17 +53,17 @@ h1 {
     align-content: center;
 }
 
-.tags > .tag.front {
+#kanban .column .card .tags > .tag.front {
     background-color: limegreen;
 }
-.tags > .tag.back {
+#kanban .column .card .tags > .tag.back {
     background-color: tomato;
 }
-.tags > .tag.device {
+#kanban .column .card .tags > .tag.device {
     background-color: gold;
 }
 
-.card {
+#kanban .column .card {
     position: relative;
     padding: 10px 20px;
     background-color: white;
@@ -72,7 +72,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-.card::before {
+#kanban .column .card::before {
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
