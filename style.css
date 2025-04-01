@@ -25,7 +25,8 @@ h1 {
 
 .column {
     box-sizing: border-box;
-    width: 20%;
+    width: calc(20% - 20px);
+    margin: 10px;
     float: left;
     text-align: center;
 
