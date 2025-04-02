@@ -28,7 +28,6 @@ h1 {
 #kanban {
   overflow: hidden;
 }
-
 #kanban .column {
   box-sizing: border-box;
   width: calc(20% - 20px);
@@ -38,34 +37,6 @@ h1 {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 10px;
 }
-
-#kanban .column .card .tags {
-  margin-top: 35px;
-}
-
-#kanban .column .card .tags > .tag {
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  align-content: center;
-}
-
-#kanban .column .card .tags > .tag.front {
-  background-color: limegreen;
-}
-
-#kanban .column .card .tags > .tag.back {
-  background-color: tomato;
-}
-
-#kanban .column .card .tags > .tag.device {
-  background-color: gold;
-}
-
 #kanban .column .card {
   position: relative;
   padding: 30px 25px;
@@ -73,7 +44,6 @@ h1 {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
 #kanban .column .card::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -90,19 +60,38 @@ h1 {
   color: white;
   border-radius: 50%;
 }
-
 #kanban .column .card:hover {
   background-color: rgba(17, 117, 162, 0.65);
   color: white;
   cursor: pointer;
 }
-
 #kanban .column .card:hover::before {
   background-color: black;
 }
-
 #kanban .column .card:hover .tags > .tag {
   color: rgb(17, 117, 162);
+}
+#kanban .column .card .tags {
+  margin-top: 35px;
+}
+#kanban .column .card .tags > .tag {
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+#kanban .column .card .tags > .tag.front {
+  background-color: limegreen;
+}
+#kanban .column .card .tags > .tag.back {
+  background-color: tomato;
+}
+#kanban .column .card .tags > .tag.device {
+  background-color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */

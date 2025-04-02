@@ -31,82 +31,81 @@ h1 {
 
 #kanban {
     overflow: hidden;
-}
 
-#kanban .column {
-    box-sizing: border-box;
-    width: calc(20% - 20px);
-    margin: 10px;
-    float: left;
+    .column {
+        box-sizing: border-box;
+        width: calc(20% - 20px);
+        margin: 10px;
+        float: left;
+    
+        padding: 10px 15px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 10px;
 
-    padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 10px;
-}
+        .card {
+            &::before {
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900;
+                -webkit-font-smoothing: antialiased;
+                content: '\f00d';
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            
+                text-align: center;
+                align-content: center;
+            
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+            }
 
-#kanban .column .card .tags {
-    margin-top: 35px;
-}
+            position: relative;
+            padding: 30px 25px;
+            background-color: white;
+            border-radius: 10px;
+        
+            margin-bottom: 15px;
 
-#kanban .column .card .tags > .tag {
-    padding: 10px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    align-content: center;
-}
+            &:hover {
+                &::before {
+                    background-color: black;
+                }
 
-#kanban .column .card .tags > .tag.front {
-    background-color: limegreen;
-}
-#kanban .column .card .tags > .tag.back {
-    background-color: tomato;
-}
-#kanban .column .card .tags > .tag.device {
-    background-color: gold;
-}
+                background-color: rgba(17, 117, 162, 0.65);
+                color: white;
+                cursor: pointer;
 
-#kanban .column .card {
-    position: relative;
-    padding: 30px 25px;
-    background-color: white;
-    border-radius: 10px;
+                .tags > .tag {
+                    color: rgba(17, 117, 162);
+                }
+            }
+            
+            .tags {
+                margin-top: 35px;
 
-    margin-bottom: 15px;
-}
-
-#kanban .column .card::before {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    -webkit-font-smoothing: antialiased;
-    content: '\f00d';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    text-align: center;
-    align-content: center;
-
-    width: 25px;
-    height: 25px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-}
-
-#kanban .column .card:hover {
-    background-color: rgba(17, 117, 162, 0.65);
-    color: white;
-    cursor: pointer;
-}
-
-#kanban .column .card:hover::before {
-    background-color: black;
-}
-
-#kanban .column .card:hover .tags > .tag {
-    color: rgba(17, 117, 162);
+                > .tag {
+                    padding: 10px;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    align-content: center;
+                }
+                > .tag.front {
+                    background-color: limegreen;
+                }
+                > .tag.back {
+                    background-color: tomato;
+                }
+                > .tag.device {
+                    background-color: gold;
+                }
+            }
+        }
+    }
 }
