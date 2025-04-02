@@ -1,3 +1,4 @@
+@use 'colors';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -23,7 +24,7 @@ h1 {
     width: fit-content;
 
     padding: 10px 20px;
-    background-color: rgba(17, 117, 162, 0.5);
+    background-color: rgba(colors.$accent, 0.5);
     border-radius: 10px;
 
     color: white;
@@ -39,7 +40,7 @@ h1 {
         float: left;
     
         padding: 10px 15px;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(white, 0.75);
         border-radius: 10px;
 
         .card {
@@ -74,12 +75,12 @@ h1 {
                     background-color: black;
                 }
 
-                background-color: rgba(17, 117, 162, 0.65);
+                background-color: rgba(colors.$accent, 0.65);
                 color: white;
                 cursor: pointer;
 
                 .tags > .tag {
-                    color: rgba(17, 117, 162);
+                    color: colors.$accent;
                 }
             }
             
@@ -97,13 +98,13 @@ h1 {
                     align-content: center;
 
                     &.front {
-                        background-color: limegreen;
+                        background-color: colors.$front-tag;
                     }
                     &.back {
-                        background-color: tomato;
+                        background-color: colors.$back-tag;
                     }
                     &.device {
-                        background-color: gold;
+                        background-color: colors.$device-tag;
                     }
                 }
             }
