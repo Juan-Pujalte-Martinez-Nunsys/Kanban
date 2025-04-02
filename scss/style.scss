@@ -95,15 +95,16 @@ h1 {
                     color: white;
                     text-align: center;
                     align-content: center;
-                }
-                > .tag.front {
-                    background-color: limegreen;
-                }
-                > .tag.back {
-                    background-color: tomato;
-                }
-                > .tag.device {
-                    background-color: gold;
+
+                    &.front {
+                        background-color: limegreen;
+                    }
+                    &.back {
+                        background-color: tomato;
+                    }
+                    &.device {
+                        background-color: gold;
+                    }
                 }
             }
         }
